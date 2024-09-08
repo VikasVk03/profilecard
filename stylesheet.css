@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.profile-card img{
+    width: 150px;
+    /* height: 150px; */
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(back2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.profile-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3em;
+    padding: 2% 2%;
+    border-radius: 1em;
+    background-color: rgba(148, 148, 148, 0.25);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.profile-card .btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn-box button{
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-box .follow{
+    background-color: white;
+    color: black;
+}
+.btn-box .follow:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-box .message{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-box .message:hover{
+    background-color: white;
+    color: black;
+}
+
+.numbers-grid .box p:first-child{
+    font-weight: 800;
+}
+
+.numbers-grid .box p:last-child{
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.info-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+@media(max-width: 900px){
+    .profile-card .numbers-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn-box button{
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: 0.3s ease;
+
+    }
+}
